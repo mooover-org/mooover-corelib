@@ -1,10 +1,10 @@
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages
 
 setup(
     name='corelib',
-    description='Library that contains data structures and functionalities to be used anywhere in the Mooover backend.',
+    description='Library that contains data structures and functionalities to be used in the Mooover backend project.',
     version='0.1.0',
-    packages=find_namespace_packages(where='corelib'),
+    packages=find_packages(exclude='test'),
     install_requires=[
         'emoji ~= 1.7.0',
         "fastapi ~= 0.111.0",

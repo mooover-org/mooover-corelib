@@ -1,7 +1,6 @@
 from typing import Any, List
 
 from corelib.domain.errors import NotFoundError, DuplicateError, InvalidContentError
-from corelib.domain.models import Entity
 
 
 class Repository:
